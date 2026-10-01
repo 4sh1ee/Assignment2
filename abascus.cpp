@@ -27,7 +27,9 @@ int main() {
         break;
 
     case 2:
-        cout << "Subtraction selected\n";
+        cout << "Enter two numbers: ";
+        cin >> a >> b;
+        cout << "Result: " << a - b << endl;
         break;
 
     case 3:
