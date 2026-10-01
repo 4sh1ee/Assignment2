@@ -33,7 +33,9 @@ int main() {
         break;
 
     case 3:
-        cout << "Multiplication selected\n";
+        cout << "Enter two numbers: ";
+        cin >> a >> b;
+        cout << "Result: " << a * b << endl;
         break;
 
     case 4:
