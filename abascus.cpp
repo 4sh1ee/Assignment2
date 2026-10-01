@@ -39,7 +39,14 @@ int main() {
         break;
 
     case 4:
-        cout << "Division selected\n";
+        cout << "Enter two numbers: ";
+        cin >> a >> b;
+
+        if (b != 0) {
+            cout << "Result: " << a / b << endl;
+        } else {
+            cout << "Error: Cannot divide by zero." << endl;
+        }
         break;
 
     case 5:
