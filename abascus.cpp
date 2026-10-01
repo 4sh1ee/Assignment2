@@ -14,13 +14,16 @@ int main() {
     cout << "==============================\n";
     
     int choice;
+    double a, b;
 
     cout << "Enter your choice: ";
     cin >> choice;
 
     switch (choice) {
     case 1:
-        cout << "Addition selected\n";
+        cout << "Enter two numbers: ";
+        cin >> a >> b;
+        cout << "Result: " << a + b << endl;
         break;
 
     case 2:
