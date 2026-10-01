@@ -12,7 +12,11 @@ int main() {
     cout << "6. Cube\n";
     cout << "0. Exit\n";
     cout << "==============================\n";
+    
+    int choice;
+
     cout << "Enter your choice: ";
+    cin >> choice;
 
     return 0;
 }
