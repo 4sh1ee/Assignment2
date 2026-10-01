@@ -18,5 +18,38 @@ int main() {
     cout << "Enter your choice: ";
     cin >> choice;
 
+    switch (choice) {
+    case 1:
+        cout << "Addition selected\n";
+        break;
+
+    case 2:
+        cout << "Subtraction selected\n";
+        break;
+
+    case 3:
+        cout << "Multiplication selected\n";
+        break;
+
+    case 4:
+        cout << "Division selected\n";
+        break;
+
+    case 5:
+        cout << "Square selected\n";
+        break;
+
+    case 6:
+        cout << "Cube selected\n";
+        break;
+
+    case 0:
+        cout << "Exiting calculator...\n";
+        break;
+
+    default:
+        cout << "Invalid choice.\n";
+    }
+
     return 0;
 }
