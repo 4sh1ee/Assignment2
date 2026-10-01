@@ -16,58 +16,62 @@ int main() {
     int choice;
     double a, b;
 
-    cout << "Enter your choice: ";
-    cin >> choice;
+    do {
 
-    switch (choice) {
-    case 1:
-        cout << "Enter two numbers: ";
-        cin >> a >> b;
-        cout << "Result: " << a + b << endl;
-        break;
+        cout << "Enter your choice: ";
+        cin >> choice;
 
-    case 2:
-        cout << "Enter two numbers: ";
-        cin >> a >> b;
-        cout << "Result: " << a - b << endl;
-        break;
+        switch (choice) {
+        case 1:
+            cout << "Enter two numbers: ";
+            cin >> a >> b;
+            cout << "Result: " << a + b << endl;
+            break;
 
-    case 3:
-        cout << "Enter two numbers: ";
-        cin >> a >> b;
-        cout << "Result: " << a * b << endl;
-        break;
+        case 2:
+            cout << "Enter two numbers: ";
+            cin >> a >> b;
+            cout << "Result: " << a - b << endl;
+            break;
 
-    case 4:
-        cout << "Enter two numbers: ";
-        cin >> a >> b;
+        case 3:
+            cout << "Enter two numbers: ";
+            cin >> a >> b;
+            cout << "Result: " << a * b << endl;
+            break;
 
-        if (b != 0) {
-            cout << "Result: " << a / b << endl;
-        } else {
-            cout << "Error: Cannot divide by zero." << endl;
+        case 4:
+            cout << "Enter two numbers: ";
+            cin >> a >> b;
+
+            if (b != 0) {
+                cout << "Result: " << a / b << endl;
+            } else {
+                cout << "Error: Cannot divide by zero." << endl;
+            }
+            break;
+
+        case 5:
+            cout << "Enter a number: ";
+            cin >> a;
+            cout << "Result: " << a * a << endl;
+            break;
+
+        case 6:
+            cout << "Enter a number: ";
+            cin >> a;
+            cout << "Result: " << a * a * a << endl;
+            break;
+
+        case 0:
+            cout << "Exiting calculator...\n";
+            break;
+
+        default:
+            cout << "Invalid choice.\n";
         }
-        break;
 
-    case 5:
-        cout << "Enter a number: ";
-        cin >> a;
-        cout << "Result: " << a * a << endl;
-        break;
-
-    case 6:
-        cout << "Enter a number: ";
-        cin >> a;
-        cout << "Result: " << a * a * a << endl;
-        break;
-
-    case 0:
-        cout << "Exiting calculator...\n";
-        break;
-
-    default:
-        cout << "Invalid choice.\n";
-    }
+    } while (choice != 0);
 
     return 0;
 }
