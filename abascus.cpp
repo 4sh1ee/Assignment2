@@ -50,7 +50,9 @@ int main() {
         break;
 
     case 5:
-        cout << "Square selected\n";
+        cout << "Enter a number: ";
+        cin >> a;
+        cout << "Result: " << a * a << endl;
         break;
 
     case 6:
