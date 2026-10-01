@@ -56,7 +56,9 @@ int main() {
         break;
 
     case 6:
-        cout << "Cube selected\n";
+        cout << "Enter a number: ";
+        cin >> a;
+        cout << "Result: " << a * a * a << endl;
         break;
 
     case 0:
